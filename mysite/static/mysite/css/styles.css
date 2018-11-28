@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Georgia;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 95%;
+    height: auto;
+}
+
+/* tipography
+========= */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+}
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: .9em;
+}
+@media (min-width:55rem) {
+    .title {
+        font-size: 3.7rem;
+    }
+}
+
+
+/* buttons */
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5em 1.75em;
+}
+.button-accent {
+    color: aqua;
+    border-color: #00ff6c
+}
+.button-accent:hover,
+.button-accent:focus {
+    background: #00ff6c;
+    color: #232323
+}
+
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+/* header
+========= */
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 1em;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em; 
+    background: red;
+    color: aliceblue;
+}
+nav a:hover,
+nav a:focus {
+    color: #DDD;
+}
+@media (min-width:55rem) {
+    .logo {
+        float: left;;
+    }
+    nav {
+        float: right;
+    }
+}
+
+/* home-hero
+========= */
+
+.home-hero {
+        background-image: url(../img/portfolio-05.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 10em 0;
+        color: rgb(54, 5, 119);
+}
+@media (min-width: 60rem) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
