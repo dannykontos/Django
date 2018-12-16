@@ -30,6 +30,10 @@ def index2(request):
     return render(request, 'mysite/index2.html')
 
 
+
+def index3(request):
+    return render(request, 'mysite/home_Virginia.html')
+
 def contact(request):
     print(request.method)
     if request.method == 'POST':
@@ -48,3 +52,6 @@ def contact(request):
 
 def portofolio(request):
     return render(request, 'mysite/portofolio.html')
+
+def scratch(request):
+    return render(request, 'mysite/scratch.html')
