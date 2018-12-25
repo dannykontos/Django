@@ -1,9 +1,34 @@
 from django.shortcuts import render
 from .models import Contact
-import requests, json
+import requests, json, lorem
 
 
 # Create your views here.
+
+def index(request):
+    if request.method == 'POST':
+        firstname = request.POST.get('fname')
+        lastname = request.POST.get('lname')
+        if(firstname==''):
+            firstname='Daniel '
+        if (lastname == ''):
+            lastname = 'K. '
+        p = firstname + ' ' + lastname + ' said: '+lorem.paragraph()
+        print(p)
+        context = {'joker': p}
+        return render(request, 'mysite/index.html', context)
+    else:
+        firstname = 'Daniel '
+        lastname = 'K. '
+        p = firstname + ' ' + lastname + ' said: ' + lorem.paragraph()
+        print(p)
+        context = {'joker': p}
+        return render(request, 'mysite/index.html', context)
+"""
+#this block was from the original tutorial
+#but it is not working on pythonanywhere because 
+#it is accessing external url, which is forbidden in free accounts
+
 def index(request):
     if request.method == 'POST':
         firstname = request.POST.get('fname')
@@ -24,15 +49,16 @@ def index(request):
         print(joke)
         context = {'joker': joke}
         return render(request, 'mysite/index.html', context)
+    """
 
 
 def index2(request):
     return render(request, 'mysite/index2.html')
 
 
-
 def index3(request):
     return render(request, 'mysite/home_Virginia.html')
+
 
 def contact(request):
     print(request.method)
@@ -53,5 +79,9 @@ def contact(request):
 def portofolio(request):
     return render(request, 'mysite/portofolio.html')
 
+
 def scratch(request):
     return render(request, 'mysite/scratch.html')
+
+def liniaTraditionala(request):
+    return render(request, 'mysite/linia-traditionala.html')

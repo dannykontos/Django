@@ -7,13 +7,6 @@ body {
     margin: 0;
     font-family: Georgia;
     text-align: center;
-
-      background-image: url("../img/waves_sea_water_114994_5616x3744.jpg"); /* The image used */
-      background-color: #cccccc; /* Used if the image is unavailable */
-
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: cover; /* Resize the background image to cover the entire container */
 }
 img {
     max-width: 100%;
@@ -108,11 +101,6 @@ nav a:focus {
     }
 }
 
-#carouselExampleControls > div > div.carousel-item.active > img
-{
-    left: 10;
-    right: 10;
-}
 /* home-hero
 ========= */
 
@@ -128,8 +116,4 @@ nav a:focus {
         height: 100vh;
         padding-top: 35vh;
     }
-}
-
-html body h1{
-    color: rgb(11, 11, 11);
 }

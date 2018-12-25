@@ -1,4 +1,4 @@
-
+{% load static %}
 * {
     box-sizing: border-box;
 }
@@ -117,6 +117,7 @@ nav a:focus {
 ============== */
 
 .home-hero {
+
     background-image:  url(../img/background.jpg);
     background-size: cover;
     background-position: center;
