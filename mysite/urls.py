@@ -25,6 +25,6 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('home_virginia/', views.index3, name='home_virginia'),
     path('scratch/', views.scratch, name='scratch'),
-    path('linia-traditionala/', views.scratch, name='scratch'),
+    path('linia-traditionala/', views.liniaTraditionala, name='liniaTraditionala'),
 
 ]
