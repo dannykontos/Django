@@ -1,4 +1,4 @@
-{% load static %}
+
 * {
     box-sizing: border-box;
 }
@@ -16,7 +16,12 @@ img {
 
 .container {
     width: 95%;
+    height: 85%;
     margin: 0 auto;
+    /* background-color:rgb(85, 83, 83); */
+    
+    
+  
 }
 
 /* typography
@@ -25,6 +30,7 @@ img {
 .title {
     font-size: 2.5rem;
     margin-bottom: 1.5em;
+        
 }
 
 .title span {
@@ -72,10 +78,10 @@ img {
 ============== */
 
 header {
-   position: absolute;
+   /*position: absolute;*/
    left: 0;
    right: 0;
-   margin-top: 1 em;
+   /* margin-top: 10 em;*/
 }
 
 nav ul {
@@ -93,14 +99,14 @@ nav a {
     font-weight: 900;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1.5rem;
     padding: .5em;
-    color: #FFF;
+    color: rgb(23, 3, 134);
 }
 
 nav a:hover,
 nav a:focus {
-    color: #DDD;
+    color: rgb(82, 69, 107);
 }
 
 @media (min-width:60rem ) {
@@ -118,17 +124,29 @@ nav a:focus {
 
 .home-hero {
 
-    background-image:  url(../img/background.jpg);
+    background-image:  url(../img/motivPopular02.jpg);
     background-size: cover;
     background-position: center;
     padding: 10em 0;
-    color: #FFF;
+    color: rgb(23, 3, 134);
+    
 }
 
 @media (min-width: 60rem) {
     .home-hero {
         height: 100vh;
-        padding-top: 50vh;
+        padding-top: 4vh;
     }
 }
+
+
+@media (max-width: 992px) {
+    .home-hero {
+        height: 100vh;
+        padding-top: 4vh;
+    }
+}
+
+
+
 
