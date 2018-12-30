@@ -58,19 +58,29 @@ img {
 }
 
 .button-accent {
-    color: #00ff6c;
-    border-color: #00ff6c
+    color: rgb(23, 3, 134);
+    border-color: rgb(23, 3, 134);
+    
 }
 
 .button-accent:hover,
 .button-accent:focus {
-    background: #00ff6c;
-    color: #232323;
+    background: #f0f1f1;
+    color: rgb(23, 3, 134);
+   
 }
 
 @media (min-width: 60rem) {
     .button {
         font-size: 1.5rem;
+        margin-top: 17rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .button {
+        font-size: 1.5rem;
+        margin-top: 5rem;
     }
 }
 
