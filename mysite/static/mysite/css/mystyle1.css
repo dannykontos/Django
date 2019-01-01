@@ -166,6 +166,25 @@ nav a:focus {
     }
 }
 
+.home-about-textbox {
+    background-color: #bcbdbe;
+    padding: 4em;
+    width: 100vw;
+    outline: 2px solid rgb(23, 3, 134);
+    outline-offset: -1em;
+    color: rgb(23, 3, 134);
+    position: relative;
+    font-size: 1.5em;
+}
 
+.home-about-textbox h1 {
+    color: rgb(23, 3, 134);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1.5em;
+    background: #bcbdbe;
+    padding: 0 .25em;
+}
 
 
