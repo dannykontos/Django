@@ -12,6 +12,7 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    margin-left: 1rem;
 }
 
 .container {
@@ -19,8 +20,7 @@ img {
     height: 85%;
     margin: 0 auto;
     /* background-color:rgb(85, 83, 83); */
-    
-    
+       
   
 }
 
@@ -42,8 +42,17 @@ img {
 @media (min-width:60rem ) {
     .title {
         font-size: 3.7rem;
+        padding: .5em 1.75em;
     }
 }
+
+@media (max-width:1366px ) {
+    .title {
+        font-size: 2.5rem;
+        padding: .5em 1.75em;
+    }
+}
+
 
 /* buttons */
 
@@ -80,7 +89,7 @@ img {
 @media (max-width: 1366px) {
     .button {
         font-size: 1.5rem;
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 }
 
@@ -145,7 +154,7 @@ nav a:focus {
 @media (min-width: 60rem) {
     .home-hero {
         height: 100vh;
-        padding-top: 4vh;
+        padding-top: 7vh;
     }
 }
 
@@ -153,7 +162,7 @@ nav a:focus {
 @media (max-width: 992px) {
     .home-hero {
         height: 100vh;
-        padding-top: 4vh;
+        padding-top: 3vh;
     }
 }
 
