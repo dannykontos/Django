@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all ease-in-out 250ms;
 }
 
 body {
@@ -17,7 +18,7 @@ img {
 
 .container {
     width: 95%;
-    height: 85%;
+    /* height: 85%; */
     margin: 0 auto;
     /* background-color:rgb(85, 83, 83); */
        
@@ -66,6 +67,19 @@ img {
     padding: .5em 1.75em;
 }
 
+@media (min-width: 60rem) {
+    .button {
+        font-size: 1.5rem;
+        /* margin-top: 17rem; */
+    }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+    
+}
+
 .button-accent {
     color: rgb(23, 3, 134);
     border-color: rgb(23, 3, 134);
@@ -79,17 +93,12 @@ img {
    
 }
 
-@media (min-width: 60rem) {
-    .button {
-        font-size: 1.5rem;
-        margin-top: 17rem;
-    }
-}
+
 
 @media (max-width: 1366px) {
     .button {
         font-size: 1.5rem;
-        margin-top: 10rem;
+      /*  margin-top: 10rem; */
     }
 }
 
@@ -187,4 +196,108 @@ nav a:focus {
     padding: 0 .25em;
 }
 
+/* portfolio */
 
+.portfolio {
+    margin: 3em 0;
+}
+
+.port-item {
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgb(0,0,0,.6);
+    padding-bottom: 2em;
+    
+}
+
+.port-desc p {
+    margin: 1;
+}
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.333334%;
+        overflow: hidden;
+    }
+}
+
+.port-desc {
+    transform: translateY(150%);
+}
+
+.port-item:hover .port-desc {
+    transform: translateY(0%);
+}
+
+/* portfolio for laptop 
+
+
+.port-item {
+    margin: 0em;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-desc {
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    color: white;
+    background: rgb(0,0,0,.6);
+    padding-bottom: 2em;
+}
+
+.port-desc p {
+    margin: 1em;
+
+}
+*/
+
+
+/* portfolio for desktop 
+
+@media (min-width: 37rem) {
+    .port-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 60rem) {
+    .port-item {
+        width: 33.3333334%;
+    }
+
+    .port-desc {
+        transform: translateY(150%);
+    }
+
+    .port-item:hover .port-desc {
+        transform: translateY(0%);
+    }
+}  */
