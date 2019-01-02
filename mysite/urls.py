@@ -26,5 +26,7 @@ urlpatterns = [
     path('home_virginia/', views.index3, name='home_virginia'),
     path('scratch/', views.scratch, name='scratch'),
     path('linia-traditionala/', views.liniaTraditionala, name='liniaTraditionala'),
+    path('linia-traditionala1/', views.liniaTraditionala1, name='liniaTraditionala1'),
+    path('about/', views.about, name='about'),
 
 ]

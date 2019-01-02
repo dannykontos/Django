@@ -85,3 +85,9 @@ def scratch(request):
 
 def liniaTraditionala(request):
     return render(request, 'mysite/linia-traditionala.html')
+
+def about(request):
+    return render(request, 'mysite/about.html')
+
+def liniaTraditionala1(request):
+    return render(request, 'mysite/linia-traditionala1.html')
